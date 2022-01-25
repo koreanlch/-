@@ -14,6 +14,5 @@ while str(new) != a:
     e = c+d
     new = int(str(d)+str(e%10))
     times += '*'
-    print(c,d,e,new)
 
 print(str(int(times.count('*'))))
