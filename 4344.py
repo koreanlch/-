@@ -10,5 +10,10 @@ for i in range(C):
             return 1
     better = list(map(over,j))
     ratio = better.count(0)/len(j)
-    answer = str(round(ratio*100,3)) + '%'
-    print(answer)
+    answer = str(round(ratio*100,3))
+    if len(answer) == 4:
+        answer += "00"
+    elif len(answer) ==5:
+        answer +='0'
+    result = answer + '%'
+    print(result)
