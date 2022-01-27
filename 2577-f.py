@@ -1,12 +1,10 @@
-## 어느부분에서 자료형 오류가 났는지 물어보기 ##
-
-a , b , c= input(), input(), input()
-mul = str(int(a)*int(b)*int(c))
+a , b , c= int(input()),int(input()),int(input())
+mul = str(a*b*c)
 
 result = ''
-for i in range(9):
-    for j in range(10):
-        result += mul.count(str(j))
+for j in range(10):
+    k=str(j)
+    result += str(mul.count(k))
     result += '\n'
 
 print(result)
