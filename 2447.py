@@ -2,8 +2,8 @@ import sys
 import math
 
 N = int(sys.stdin.readline())
-k = int(math.log(N,3))
-def shape(x):
+k = round(math.log(N,3))
+def shape(x): 
     if x==1:
         star = ["*"*3,"* *","*"*3]
         return star
