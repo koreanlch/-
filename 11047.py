@@ -3,12 +3,7 @@ coins = []
 for i in range(N):
     value= int(input())
     coins.append(value)
-    
-for j in coins :
-    if j>K:
-        over = coins.index(j)
-        break
-coins= coins[:over]
+
 coins.reverse()
 
 count = 0
