@@ -1,8 +1,11 @@
 N = int(input())
 
 row = []
+numbers = []
 for i in range(N):
     line = list(map(int,input().split()))
+    for k in line :
+        numbers.append(k)
     row.append(line)
 
 TF = 0
@@ -36,7 +39,14 @@ if TF == 0:
         king += row[_][N-_-1]
     if king != N*(N**2+1)/2:
         TF +=1
-
+if TF== 0:
+    count = 0
+    for i in range(N):
+        for j in range(N):
+            count += numbers.count(row[i][k])
+    if count != N**2:
+        TF+=1
+            
 if TF == 0:
     print("TRUE")
 else:
